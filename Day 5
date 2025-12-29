@@ -1,0 +1,22 @@
+int button=2;
+int relay=3;
+int value;
+void setup() {
+  pinMode(button,INPUT);
+  pinMode(relay,OUTPUT);
+  
+
+}
+
+void loop() {
+  value=digitalRead(button);
+  if(value==1){
+    digitalWrite(relay,HIGH);
+    }
+  if(value==0)
+  {
+    
+    digitalWrite(relay,LOW);
+  }
+
+}
